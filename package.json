@@ -23,6 +23,7 @@
   },
   "scripts": {
     "build:js": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline --devtool inline-source-map --history-api-fallback",
+    "production:js": "node ./node_modules/webpack/bin/webpack.js --config webpack.production.js -p",
     "test": "NODE_ENV=test ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "repository": {

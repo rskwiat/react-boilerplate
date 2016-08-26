@@ -11,12 +11,6 @@ if(process.env.NODE_ENV === 'test'){
   var path = './tests';
   var filename = 'SpecRunner.js';
   var contentBase = './tests';
-} else if (process.env.NODE_ENV === 'production') {
-  var entry = './src/main.js';
-  var path =  __dirname;
-  var publicPath = '/';
-  var filename = './dist/bundle.js';
-  var contentBase = './public';
 } else {
   var entry = './src/main.js';
   var path =  __dirname;
